@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES=0 python train.py \
+    --n-gpus=1 \
+    --domain=arggen \
+    --setup=pair-full \
+    --train-set=train-toy \
+    --valid-set=dev-toy \
+    --eval-batch-size=5 \
+    --train-batch-size=10 \
+    --num-train-epochs=20 \
+    --ckpt-dir=../checkpoints/arggen/pair-full/demo \
+    --tensorboard-dir=pair-full-demo \
+    --quiet

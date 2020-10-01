@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=0 python generate.py \
+    --domain=arggen \
+    --setup=pair-full \
+    --test-set=train-toy \
+    --output-name=test_demo \
+    --enforce-template-strategy=flexible \
+    --sample-times=3 \
+    --sampling-topk=10 \
+    --sampling-topp=0.9 \
+    --do-sampling \
+    --ckpt-dir=../checkpoints/arggen/pair-full/demo
